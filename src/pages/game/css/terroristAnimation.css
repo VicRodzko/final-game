@@ -1,0 +1,82 @@
+@-webkit-keyframes monsterAttack {
+  0.001% {
+    right: 15%;
+  }
+  90% {
+    right: 60%;
+  }
+  100% {
+    right: 62%;
+    transform: rotate(60deg) translateY(-10%);
+  }
+}
+
+@-webkit-keyframes monsterDeath {
+  0.001% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.8);
+  }
+  40% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(0.4);
+  }
+  80% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes monster-left-right-head {
+  from {
+    left: -3%;            
+  }
+  to {
+    left: 3%;
+  }
+}
+
+@keyframes monster-left-right-legs {
+  from {
+    left: -0.5%;            
+  }
+  to {
+    left: 0.5%;
+  }
+}
+
+.monster-attack-animation {
+  -webkit-animation-name: monsterAttack;
+  -webkit-animation-duration: 1500ms;
+}
+
+.monster-dead-animation {
+  -webkit-animation-name: monsterDeath;
+  -webkit-animation-duration: 1500ms;
+}
+
+.monster-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.monster-details img:first-child {
+  position: relative;
+  display: block;
+  width: 170px;
+
+  animation: monster-left-right-head 0.3s infinite alternate;
+}
+
+.monster-details img:last-child {
+  position: relative;
+  display: block;
+  width: 170px;
+
+  animation: monster-left-right-legs 0.3s infinite alternate;
+}

@@ -1,0 +1,228 @@
+* {
+	box-sizing: border-box;
+}
+
+html, 
+body {
+	min-width: 1230px;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Arial', sans-serif;
+	line-height: 1;
+}
+
+.container {
+	width: 1230px;
+	margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container__back {
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.87);
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+h2 {
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.header {
+	width: 100%;
+	margin-bottom: 87px;
+	
+    background: url(../images/car.gif), no-repeat;
+    background-size: 90%;
+	background-position: top center;
+	background-repeat: repeat-x;
+	color: white;
+}
+
+.header__top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+}
+
+.header__logo { 
+	padding-left: 4px; 
+	padding-top: 4px; 
+}
+
+.header__items {
+	max-width: 950px;
+
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.header__item {
+	margin-left: 69px;
+	padding: 37px 0 35px;
+
+	border-bottom: 1px solid transparent;
+}
+
+.header__item:first-child {
+	margin-left: 0;
+}
+
+.header__item:hover, 
+.header__item:focus {
+	border-bottom: 1px solid #b5edd0;
+	cursor: pointer;
+}
+
+.header__link {
+	color: white;
+}
+
+.header__link:hover,
+.header__link:focus {
+	color: rgba(57, 208, 131, 0.91);
+	transition: 0.7s;
+}
+
+.header__banner {
+	margin-top: 170px;
+	margin-bottom: 230px;
+
+	text-align: center;
+}
+
+.banner__heading {
+	margin-bottom: 9px;
+
+	font-family: "Arial", sans-serif;
+	font-size: 72px;
+	line-height: 72px;
+	letter-spacing: -0.08em;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.banner__text {
+	font-family: "Georgia", "Times New Roman", serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 47px;
+}
+
+main {
+    width: 100%;
+}
+
+.playing__container {
+    width: 40%;
+    margin: 10% 0 20% 10%;
+    padding: 20px 50px;
+
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 32px;
+    border-top: 5px solid grey;
+    text-align: left;
+    background-color: white;
+    box-shadow: 1px 7px 22px rgb(0, 0, 0);
+}
+
+.playing__container a {
+	font-family: "Georgia", "Times New Roman", serif;
+	font-size: 30px;
+	color: black;
+	border: solid black 2px;
+	border-radius: 5px;
+	padding: 5px 15px;
+	margin-left: 30%;
+	background: rgb(180, 180, 180);
+}
+
+.playing__container a:hover {
+	background: rgb(75, 75, 75);
+	color: white;
+}
+
+.screening {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+    
+.screening__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(190, 190, 190);
+    border-radius: 15px;
+}
+
+.screening__container img {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+    border: solid black 3px;
+    border-radius: 5px;
+}
+
+.screening__container img:hover {
+    transform: scale(1.6);
+}
+
+.aboutMe {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.aboutMe img {
+    width: 100%;
+    margin-bottom: -70px;
+}
+
+.aboutMe a {
+    font-family: "Georgia", "Times New Roman", serif;
+	font-style: bold;
+	font-weight: 400;
+	font-size: 32px;
+    line-height: 47px;
+    color: rgb(89, 230, 255);
+    margin-left: 300px;
+}
+
+.aboutMe a:hover {
+	font-size: 40px;
+    color: rgb(21, 200, 255);
+}
